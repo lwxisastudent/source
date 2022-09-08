@@ -8,7 +8,7 @@ Cactus魔改的笔记本用Hexo主题！！！
 1. In the `root` directory:
 
     ```sh
-    $ git clone https://github.com/probberechts/hexo-theme-cactus.git themes/cactus
+    $ git clone https://github.com/lwxisastudent/hexo-theme-cactus.git themes/cactus
     ```
 
 2. Change the `theme` property in the `_config.yml` file.
