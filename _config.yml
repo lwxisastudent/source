@@ -5,6 +5,10 @@
 # Link to a page that gives an overview of all your projects.
 # This can be an external link (e.g., to you GitHub profile) or to another
 # page within your website.
+
+local_search:
+  enable: true
+  
 projects_url: http://github.com/probberechts
 
 # Set the page direction to RTL or LTR. default is LTR. (if you set it 'rtl', the 'vazir' font will be loaded.)
@@ -15,9 +19,12 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  about: /about/
+  #about: /about/
   articles: /archives/
-  projects: http://github.com/probberechts
+  tag: /tags/
+  课表: /notes/44742/
+  搜索: /search/
+  #projects: http://github.com/probberechts
 
 
 # Links to your social media accounts.
@@ -62,8 +69,8 @@ post:
 # Customize the copyright years
 # Note: if start_year/end_year not provided, will use current year.
 copyright:
-  start_year: 2016
-  end_year:
+  start_year: 2022
+  end_year: 2026
 
 ##############################################################################
 # Look and Feel
@@ -112,7 +119,7 @@ favicon:
 # Set the color scheme.
 # Available color schemes are 'dark', 'light', 'classic' and 'white'.
 # Alternatively, add your own custom color scheme to source/css/_colors.
-colorscheme: dark
+colorscheme: white
 
 # Maximal width of the page in rem units.
 page_width: 48
@@ -139,7 +146,7 @@ open_graph:
 
 # Enable MathJax support for Latex
 mathjax:
-  enabled: false
+  enabled: true
   
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
@@ -190,3 +197,4 @@ cdn:
   font_awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css
   justified_gallery_css: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/css/justifiedGallery.min.css
   justified_gallery_js: https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.8.1/js/jquery.justifiedGallery.min.js
+  
