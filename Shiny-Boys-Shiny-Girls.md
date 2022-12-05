@@ -1,7 +1,7 @@
 ---
 title: Shiny Boys Shiny Girls
 tags:
-  - 梦想的旗帜
+  - 梦想的旗帜,14
 abbrlink: 63785
 ---
 |      |U~Hai U~Hai U~Hai U~Hai<br>A~yosshaikuzo<br>Taiga Faiya Saiba Faiba Daiba Baiba Jya-jya|

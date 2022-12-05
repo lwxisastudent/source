@@ -1,9 +1,10 @@
----
+abbrlink: 19205
 title: X基因
 tags:
   - 梦想的旗帜
-abbrlink: 19205
 ---
+> 别称：F to T、C基因
+
 |      |Bi Bobo Bibobi*7+拍掌|
 |--|--|
 |S△ N△ H△ Forty Eight|OOO OOO OOO Forty Eight|
