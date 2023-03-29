@@ -145,4 +145,6 @@ euphonious
 
 "With throats unslaked, with black lips"
 
-### **anaphora**
+###**anaphora**
+
+###**hyperbole**
