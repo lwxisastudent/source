@@ -47,17 +47,17 @@ pagination:
  
 counter:
   tag_cloud:
-    zero: 没有标签
+    zero: 还没有标签捏~
     one: ""
     other: ""
 
   categories:
-    zero: 没有分类
+    zero: 还没有分类捏~
     one: ""
     other: ""
 
   archive_posts:
-    zero: 没有归档
+    zero: 还没有归档捏~
     one: ""
     other: ""
 

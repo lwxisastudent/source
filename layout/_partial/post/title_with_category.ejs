@@ -1,0 +1,15 @@
+<% if (index) { %>
+    <% if (post.link) { %>
+        <a class="<%= class_name %>" href="<%- url_for(post.link) %>" target="_blajavascript:;nk" itemprop="url"><%= post.title %></a>
+    <% } else if (post.title) { %>
+            <div class="meta2"><%- list_categories(post.categories, { show_count: false, style: 'link', separator: ' › ' }) %></div>
+            <span><a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%=post.title %></a></span>
+    <% } else { %>
+        <a class="<%= class_name %>" href="<%- url_for(post.path) %>">无题</a>
+    <% } %>
+<% } else { %>
+    <h1 class="<%= class_name %>" itemprop="name headline">
+        <%= post.title %>
+    </h1>
+<% } %>
+

@@ -21,9 +21,12 @@ nav:
   home: /
   #about: /about/
   articles: /archives/
-  tag: /tags/
-  课表: /notes/44742/
+  #tag: /tags/
+  课表: /notes/28374/
+  文件: /files/
   搜索: /search/
+  CALL词: http://call.lawaxi.net
+  Unicode: https://unicode-table.com/
   #projects: http://github.com/probberechts
 
 
