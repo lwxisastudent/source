@@ -35,7 +35,7 @@ mov ds,bx
 **六**
 错误写法：
 mov ax,[bx][bp]
-mov ax,[si][oi]
+mov ax,[si][di]
 不能两个都是基址寻址，也不能两个都是变址。
 
 **七**
