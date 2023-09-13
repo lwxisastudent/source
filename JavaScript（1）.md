@@ -197,6 +197,97 @@ console.log(a);
 class ClassName {
   constructor() { ... }
 }
+
+function ClassName {
+  ...
+}
 ```
 
-### 
+- class方法定义（this）在原型（类）上（java static），function定义在构造器上
+  - 不同对象构造器不是共享的，function的方法也固然不共享，可以在function后面通过**ClassName.prototype.**在原型上添加方法
+  - 尝试：原有方法（toString）无法通过this.xxx=覆盖，因此class重写需要通过ClassName.prototype.，function可以在构造器上创建新的函数（即无“原有方法”），但因不能共享，也不建议
+- function可以实现私有属性、方法：即不定义，用var的方式，再加上getter
+- 原型中（class定义法定义的）方法不可枚举，构造器（function定义法定义的）方法可枚举
+- function定义提升，class定义不提升
+- 综上来看，function挺fw的
+
+### 对象
+
+Math是一个全局对象
+
+#### Object
+
+对象字面量（可填属性或方法）
+
+访问属性：.只能用属性名；[]可用属性名或变量
+
+将对象转化为字符串，自动忽略方法：JSON.stringify(object);（也可用于数组、日期转字符串）
+
+```javascript
+var person = {
+  firstName: "Bill",
+  lastName : "Gates",
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+  language : "en",
+  get lang() {  //更简洁：属性语法，方法效果
+    return this.language;
+  }
+  set lang(lang) {
+    this.language = lang;
+  }
+};
+
+person.lang;
+person.lang = "en";
+Object.defineProperty(person, "lang", {
+  set : function (lang) {this.language = lang;}
+});
+```
+
+#### for in、for of
+
+for in遍历可枚举性（数组、对象中遍历索引）
+
+for of遍历可迭代性（数组、对象中遍历值）
+
+```javascript
+//可迭代性实现
+function ClassName(){
+  return {
+      next: function() {
+        ...
+        return {value:..., done:false};
+      }
+    };
+}
+
+var n = ClassName();
+n.next();
+//遍历：
+while (true) {
+  const result = n.next();
+  if (result.done) break;
+  ...
+}
+
+//for of迭代是Symbol.iterator属性（值为一个对象）的可迭代性
+ClassName[Symbol.iterator] = function() {
+  ...
+  return {
+      next: function() {
+        ...
+        return {value:..., done:false};
+      }
+    };
+}
+
+//遍历：等价于for(const x of n)
+let terator = n[Symbol.iterator]();
+while (true) {
+  const result = iterator.next();
+  if (result.done) break;
+  ...
+}
+```
