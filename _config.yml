@@ -20,13 +20,13 @@ direction: ltr
 nav:
   home: /
   #about: /about/
-  articles: /archives/
+  #articles: /archives/
   #tag: /tags/
-  课表: /notes/28374/
+  课表: /notes/10509/
   文件: /files/
   搜索: /search/
   CALL词: http://call.lawaxi.net
-  Unicode: https://unicode-table.com/
+  治学工具: /notes/62377/
   #projects: http://github.com/probberechts
 
 

@@ -24,20 +24,7 @@
 /*exported searchFunc*/
 var searchFunc = function(path, searchId, contentId) {
 
-  function stripHtml(html) {
-    html = html.replace(/<style([\s\S]*?)<\/style>/gi, "");
-    html = html.replace(/<script([\s\S]*?)<\/script>/gi, "");
-    html = html.replace(/<figure([\s\S]*?)<\/figure>/gi, "");
-    html = html.replace(/<\/div>/ig, "\n");
-    html = html.replace(/<\/li>/ig, "\n");
-    html = html.replace(/<li>/ig, "  *  ");
-    html = html.replace(/<\/ul>/ig, "\n");
-    html = html.replace(/<\/p>/ig, "\n");
-    html = html.replace(/<br\s*[\/]?>/gi, "\n");
-    html = html.replace(/<[^>]+>/ig, "");
-    return html;
-  }
-
+//待搜索关键词
   function getAllCombinations(keywords) {
     var i, j, result = [];
 
@@ -58,6 +45,8 @@ var searchFunc = function(path, searchId, contentId) {
         return {
           title: $("title", this).text(),
           content: $("content", this).text(),
+          content1: $("content-autos", this).text(),
+          content2: $("content-autot", this).text(),
           url: $("link", this).attr("href")
         };
       }).get();
@@ -66,7 +55,7 @@ var searchFunc = function(path, searchId, contentId) {
       if (!$input) { return; }
       var $resultContent = document.getElementById(contentId);
 
-      $input.addEventListener("input", function(){
+      $input.addEventListener("input", async function(){
         var resultList = [];
         var keywords = getAllCombinations(this.value.trim().toLowerCase().split(" "))
           .sort(function(a,b) { return b.split(" ").length - a.split(" ").length; });
@@ -78,22 +67,26 @@ var searchFunc = function(path, searchId, contentId) {
         datas.forEach(function(data) {
           var matches = 0;
           if (!data.title || data.title.trim() === "") {
-            data.title = "Untitled";
+            data.title = "无标题";
           }
           var dataTitle = data.title.trim().toLowerCase();
           var dataTitleLowerCase = dataTitle.toLowerCase();
-          var dataContent = stripHtml(data.content.trim());
+          var dataContent = data.content.trim();
           var dataContentLowerCase = dataContent.toLowerCase();
+          var dataContentLowerCase_jt = data.content1.toLowerCase();
+          var dataContentLowerCase_ft = data.content2.toLowerCase();
           var dataUrl = data.url;
           var indexTitle = -1;
           var indexContent = -1;
           var firstOccur = -1;
+          var matchKeywords = [];
           // only match artiles with not empty contents
           if (dataContent !== "") {
             keywords.forEach(function(keyword) {
               indexTitle = dataTitleLowerCase.indexOf(keyword);
-              indexContent = dataContentLowerCase.indexOf(keyword);
-
+              indexContent = (dataContentLowerCase.indexOf(keyword) + 1 || dataContentLowerCase_jt.indexOf(keyword) + 1 || dataContentLowerCase_ft.indexOf(keyword) + 1) - 1;
+              matchKeywords.push(dataContentLowerCase.substring(indexContent, indexContent + keyword.length));
+          
               if( indexTitle >= 0 || indexContent >= 0 ){
                 matches += 1;
                 if (indexContent < 0) {
@@ -130,7 +123,7 @@ var searchFunc = function(path, searchId, contentId) {
               var matchContent = dataContent.substring(start, end);
 
               // highlight all keywords
-              var regS = new RegExp(keywords.join("|"), "gi");
+              var regS = new RegExp(matchKeywords.join("|"), "gi");
               matchContent = matchContent.replace(regS, function(keyword) {
                 return "<em class=\"search-keyword\">"+keyword+"</em>";
               });
