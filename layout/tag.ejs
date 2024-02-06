@@ -1,0 +1,15 @@
+<div class="archive-profile">
+<h1 class="stage-title">
+<i class="fas fa-tag"></i><%- page.tag %>
+</h1>
+
+<div id="archive">
+  <ul class="post-list">
+    <% page.posts.forEach(function(post) { %>
+      <li class="post-item">
+        <%- partial('_partial/post/title', { post: post, index: true, class_name: getIndex(post.title) }) %>
+      </li>
+    <% }); %>
+  </ul>
+  <%- partial('_partial/pagination') %>
+</div>

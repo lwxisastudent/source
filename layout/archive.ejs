@@ -1,12 +1,23 @@
-    <% var ps = page.posts.sort({title: 1}).toArray().sort(function(a,b){return getIndex(a.title)-getIndex(b.title);}) %>
-<header><h1 class="categorytitle" itemprop="name headline"><i class="fas fa-archive"></i>
-        <%- list_categories(ps[0].categories, { show_count: false, style: 'fuck', separator: ' › ' }) %>
-    </h1></header>
+<div class="archive-profile">
+<h1 class="stage-title">
+<i class="fas fa-archive"></i>文章列表
+</h1>
+
 <div id="archive">
   <ul class="post-list">
-    <% ps.forEach(function(post) { %>
+    <% var year = 0 %>
+    <% var change = false %>
+    <% var field_sort = theme.archive.sort_updated ? 'updated' : 'date' %>
+    <% page.posts.sort(field_sort, 'desc').each(function(post) { %>
+      <% var itemYear = date(post[field_sort], 'YYYY') - 0 %>
+      <% change = year !== itemYear %>
+      <% year = change ? itemYear : year %>
+      <% if (change) { %>
+        <li class="post-year"><h2><%= year %></h2></li>
+      <% } %>
       <li class="post-item">
-        <%- partial('_partial/post/title', { post: post, index: true, class_name: getIndex(post.title) }) %>
+        <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
+        <%- partial('_partial/post/title_with_category', { post: post, index: true, class_name: '' }) %>
       </li>
     <% }); %>
   </ul>
