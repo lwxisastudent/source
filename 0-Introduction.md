@@ -147,3 +147,20 @@ Presention（10，5-8分钟）+测试（10*4，3周考5页）+论文（50）
   - terrible，法语中意思是极好的
   - sale，法语中意思是有盐的咸的、下流的污秽的
 
+***
+
+polish 打磨
+
+lingua franka （意大利语）自由语言，即通用语
+
+English has lingua franka status
+
+Lewis and Clark expectation
+
+vernacular adj/n口语白话
+
+African American Vernacular English
+
+双重否定表否定，I didn't do nothing
+
+Commonwealth 英联邦
