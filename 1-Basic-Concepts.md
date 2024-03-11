@@ -71,7 +71,9 @@ categories:
 	- cosmical 廣大無邊的
 	- cosmetic 美化
 - galacto- lact- 乳的、奶的（赫拉克勒斯吸食天后赫拉乳汁，Milky Way）
-	- 。。。
+	- galaxy
+	- lactose 乳糖
+	- lactic 奶的
 - helio- sol-太陽（希臘神話老太陽神Helios，羅馬神話Sol，北歐神話Sunna/Sunne，第一天獻給神，Sunday）
 	- solar 太陽的
 	- insolate 使暴曬
@@ -180,7 +182,11 @@ resume 前重音：簡歷，後重音：重新開始（法語）
 
 disciplinal word：術語（discipline 可表示學科）
 
-。。。
+![](002.jpg)
+
+![](003.jpg)
+
+![](004.jpg)
 
 安格魯撒克遜詞（native words）：God house rain sea bear sheep，good spell → gospel福音書
 
@@ -196,11 +202,7 @@ disciplinal word：術語（discipline 可表示學科）
 
 方言：
 
-- 澳大利亞：station牧場、stroller嬰兒車（其他地區也用）
-- 威爾士：cwm =valley
-- fall（純正英語，現在北美用）=autumn （法語詞，英語借用）
-- 。。。
-- 印地安人：wigwam棚屋
+![](001.jpg)
 
 ***
 
