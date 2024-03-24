@@ -102,6 +102,74 @@ categories:
 
 ***
 
+## Between Europe and Asia
+
+- libr- lib-=book
+	- 拉丁語liber 樹木內皮 書寫材料（羅馬木簡）
+	- library
+		- ary 表示場所
+	- librarian 圖書管理員
+	- libretto （小書）歌詞集、劇本
+		- -etto 小
+	- ex-libris （拉丁語詞）藏書票，…的藏書（粘在扉頁作為藏書 始於15世紀德國 17世紀法國流行）
+	- **libel 中傷、誹謗**
+		- -el 小（指控訴書）
+	- libelous 誹謗的
+- numer-=number
+	- 拉丁語numerus 表示數目
+	- numeral
+	- numerous
+	- enumerate 點數 列舉
+		- e 離開、向外
+	- innumerable
+	- numeracy 識字 計算能力
+		- -acy 表示性質狀態
+- vict- vinc-=to conquer
+	- 拉丁語vincere 本意征服 羅馬勝利女神Victoria影響也表示勝利
+	- victory
+	- evict 驅逐逐出
+	- convince 說服
+		- con- 全部
+	- invincible 不可克服的
+- ori- orig- ort- =to rise, begin
+	- 拉丁語sol orients 旭日（太陽+升起），東方：orient（薩義德《東方學》：*Orientalism*）
+	- orient 東方 （使）向東
+	- origin
+	- abortion 流產墮胎失敗中止
+
+## Speaking
+
+- claim-（拉丁語動詞） clam-（拉丁語名詞）=cry out, shout**叫喊**呼喊
+	- 拉丁語clamare 
+	- acclaim 表揚
+	- disclaim 放棄、拒絕承認
+	- declaim 演說
+		- de 向下
+	- reclaim 回收、開墾
+		- re 向後 返回
+	- exclaim v. - exclamatory adj. - exclamation n.
+	- proclaim v. - proclamatory adj. - proclamation n.
+- fess- fam- fan- fat-=speak 說 **預言**（衍生為命運，神靈預言=命運）
+	- infant （不能說話的）嬰兒的
+	- confess （一起說出來）坦白、懺悔
+	- profess 聲稱、講授
+	- fate n.命運、v.注定
+- lingu- langu- = language 原意**舌頭** 也表示語言（**生理性**的）
+	- 拉丁語linguaticum 舌頭
+	- linguiform 舌狀的
+	- lingual 舌音的、語言的
+	- language
+	- tongue 舌頭：古英語來自lingu-，l-d音變
+- log- logu-=speak 說話（**知識的**） 引申為…學
+	- 希臘語logos
+	- catalog 目錄
+		- cata- 向下
+	- monolog 獨白
+	- philology （愛說的）語言學
+	- xxxlogy 學問
+
+***
+
 1. 凱爾特语 Celtic words
    - Celt-Celtic 语族：Irish（北爱尔兰地区）、Scottish Gaelic 高地苏格兰语/苏格兰盖尔语（高原）、Wales
 2. Old English（450-1150AD）：highly inflected language
